@@ -1,0 +1,86 @@
+* {
+    margin:0;
+}
+
+.logo {
+    background: #ffc4c4;
+    grid-area: logo;
+}
+
+.navigation {
+    background: #fd9696;
+    grid-area: nav;
+}
+
+.infoAboutMe {
+    background: #fc5b5b;
+    grid-area: infoAboutMe;
+}
+
+.myPhoto {
+    background: #ff2b2b;
+    grid-area: myPhoto;
+}
+
+.skills {
+    background: #d0ffda;
+    grid-area: skills;
+}
+
+.certificates {
+    background: #6cc4a2;
+    grid-area: certificates;
+}
+
+.tools {
+    background: #0a8d66;
+    grid-area: tools;
+}
+
+.education {
+    background: #535755;
+    grid-area: education;    
+}
+
+footer {
+    background: #746de2;
+    grid-area: footer;    
+}
+
+body {
+    background-image: url(../img/bgImg.png);
+    height: 100vh;
+    // display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:  150px;
+    grid-template-areas:
+    //  "logo nav nav nav nav"
+    //  "infoAboutMe infoAboutMe myPhoto myPhoto myPhoto"
+    //  "skills skills certificates certificates certificates"
+    //  "tools tools education education education"
+     "footer footer footer footer footer"
+
+    //  ;
+    
+}
+
+main {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 3fr 1fr 1fr ;
+    grid-template-areas:
+     "infoAboutMe infoAboutMe myPhoto myPhoto myPhoto"
+     "skills skills certificates certificates certificates"
+     "tools tools education education education"
+     ;
+
+}
+header {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 3fr 1fr 1fr ;
+    grid-template-areas:
+     "logo nav nav nav nav"
+     ;
+
+}
